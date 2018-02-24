@@ -18,8 +18,8 @@ app.get('/', function(req, res) {
 });
 
 
-app.listen(8000, function() {
-  console.log("listening on port 8000");
+app.listen(6789, function() {
+  console.log("listening on port 6789");
 })
 
 module.exports = app;
