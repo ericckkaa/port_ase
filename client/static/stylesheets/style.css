@@ -1,0 +1,441 @@
+* {
+	box-sizing: border-box;
+    /*outline: dotted red 1px;*/
+}
+
+.wrapper {
+	margin: 0;
+}
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* NavBar */
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 10px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.logo {
+	margin-top: -15px;
+	margin-left: -4px;
+}
+
+
+/* Parallax */
+
+.parallax--bg {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	transition: initial;
+}
+
+.beach {
+    min-height: 750px;
+    background-image: url("https://s3-us-west-1.amazonaws.com/eaportfolio/santa_monica.jpg");
+}
+
+.sunset {
+	min-height: 400px;
+    background-image: url("https://s3-us-west-1.amazonaws.com/eaportfolio/sunset.jpg");
+}
+
+
+/* Typography */
+.name {
+    font-size: 46px;
+    letter-spacing: 50px;
+	margin-left: 35px;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+@font-face {
+    font-family: JackLane;
+    src: url('/static/fonts/jacklane.otf') format('opentype');
+}
+
+nav ul {
+    font-family: 'JackLane';
+    font-size: 16px;
+}
+
+.main-title {
+    font-family: 'JackLane';
+}
+
+.introduction {
+	text-align: center;
+}
+
+.section_title {
+    font-family: 'JackLane';
+    font-size: 36px;
+}
+
+.about_content1, .about_content2 {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.work {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.port_content {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.skill {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer_text {
+    font-family: 'JackLane';
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact_content, .contact_content2 {
+    color: white;
+    font-family: 'JackLane';
+    font-size: 22px;
+    text-align: left;
+}
+
+.contact_content2 > a {
+    color: white;
+}
+
+/* Content */
+
+.nav-marker {
+	height: 5px;
+}
+
+hr.marker {
+	border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	width: 85%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* In Parallax Secion */
+.introduction {
+	margin: 250px 0;
+}
+
+span.glyphicon-chevron-down {
+	font-size: 30px;
+	margin-top: 250px;
+	color: white;
+}
+
+/* About Section */
+#about {
+    margin: 75px 0;
+}
+
+.about-title {
+    margin-bottom: 35px;
+}
+
+.about_content1 {
+	margin-bottom: 35px;
+}
+
+.about_content2 {
+	margin-bottom: 30px;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+    margin: 85px 0px;
+}
+
+.portfolio-row {
+    padding: 30px 0px;
+}
+
+.port_icons {
+    text-align: center;
+}
+
+.tws_icons {
+	margin-top: 50px;
+}
+
+.showMe {
+	opacity: 0;
+	-webkit-transition: all .55s ease-in;
+	-moz-transition: all .55s ease-in;
+	-ms-transition: all .55s ease-in;
+	-o-transition: all .55s ease-in;
+	transition: all .55s ease-in;
+}
+
+.showMe {
+	overflow-y: hidden;
+}
+
+.showMe.left {
+	left: 0%;
+}
+
+.showMe.right {
+	right: 0%;
+}
+
+.left.showing {
+	left: 0%;
+	opacity: 1;
+}
+
+.right.showing {
+	right: 0%;
+	opacity: 1;
+}
+
+/* Skills Section */
+
+#skills {
+    margin: 100px 0px;
+}
+
+.technical {
+    margin-bottom: 35px;
+}
+
+#stacks {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.skill {
+    margin-top: 18px;
+}
+
+#front-end {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.boot {
+    margin-top: 14px;
+}
+
+.jquery {
+	margin-top: 8px;
+}
+
+.software_title {
+	margin-bottom: 35px;
+}
+
+#software {
+    text-align: center;
+}
+
+.ps, .ai {
+    padding-top: 15px;
+}
+
+.balsamiq {
+    padding-top: 25px;
+}
+
+.invision {
+    margin-top: 15px;
+}
+
+/* Contact Section */
+
+#contact {
+	margin: 85px 0;
+}
+
+.contact_content {
+    padding-top: 60px;
+}
+
+.contact_content, .contact_content2 {
+	text-align: center;
+}
+
+.profile_pic {
+	padding-top: 35px;
+}
+
+/* Footer Section */
+
+footer {
+    height: 150px;
+}
+
+.social_links {
+	text-align: center;
+    margin-top: 50px;
+}
+
+.glyphicon-heart {
+    color: red;
+}
+
+
+
+/* Responsive CSS */
+
+@media (max-width: 767px) {
+	.parallax--bg {
+		background-attachment: scroll !important;
+	}
+	.beach {
+		min-height: 400px;
+	}
+
+	.sunset {
+		min-height: 200px;
+	}
+
+	.logo {
+		width: 50px;
+	}
+
+	.introduction {
+		margin: 200px 0;
+	}
+
+	.name {
+	    font-size: 30px;
+	    letter-spacing: 25px;
+	}
+
+	.title {
+	    font-size: 22px;
+	    line-height: 1.2;
+	}
+
+	.section_title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.work {
+		font-size: 26px;
+	}
+
+	.port_content,
+	.about_content1,
+	.about_content2,
+	.contact_content,
+	.skill,
+	.contact_content2  {
+		font-size: 18px;
+	}
+
+	.profile {
+		text-align: center;
+	}
+
+	#about, #portfolio, #skills, #contact {
+		margin: 50px 0;
+	}
+
+	.html-css-js > img {
+		width: 175px;
+	}
+
+	.jquery > img {
+		width: 150px;
+	}
+
+	#about {
+		margin: 50px 0;
+	}
+
+	#portfolio {
+		margin: 50px 0;
+	}
+
+	#skills {
+		margin: 50px 0;
+	}
+
+	.profile_pic {
+		margin-bottom: 10px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.name {
+	    font-size: 36px;
+	    letter-spacing: 35px;
+	}
+
+	.title {
+	    font-size: 26px;
+	    line-height: 1.2;
+	}
+
+	.profile {
+		text-align: center;
+	}
+}
+
+@media (min-width: 992px) {
+	.name {
+	    font-size: 40px;
+	    letter-spacing: 45px;
+	}
+
+	.title {
+	    font-size: 30px;
+	    line-height: 1.2;
+	}
+}
+
+@media (min-width: 1200px) {
+	.name {
+	    font-size: 46px;
+	    letter-spacing: 50px;
+	}
+
+	.title {
+	    font-size: 36px;
+	    line-height: 1.5;
+	}
+}
